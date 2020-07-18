@@ -12,7 +12,7 @@ function App() {
       <Media
         query="(min-width: 527px)"
         render={() => (
-          <video autoPlay muted="" loop="" id="siteVideo">
+          <video autoPlay="true" muted="" loop="" id="siteVideo">
             <source src={bgVideo} type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
