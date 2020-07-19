@@ -224,14 +224,14 @@ footer > h6 {
   .mask {
     display: none;
   }
-  #siteVideo {
+  /* #siteVideo {
     display: none;
-  }
+  } */
 }
 @media (min-width: 527px) {
-  #siteVideo {
+  /* #siteVideo {
     display: block;
-  }
+  } */
   .app-header {
     position: relative;
     background: transparent;

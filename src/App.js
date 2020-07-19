@@ -1,21 +1,30 @@
 import React from "react";
 import Media from "react-media";
+import Video from "./components/Video"
 import logo_desktop from "./assets/logo_desktop.png";
 import logo_mobile from "./assets/logo_mobile.png";
 import bgVideo from "./assets/alea.mp4";
 import photo_mobile from "./assets/photo_mobile.png";
+
 import "./styles.css";
 
 function App() {
+
+  // const playVid = () => {
+  //   const vid = document.getElementById("siteVideo");
+  //   vid.play();
+  // };
+
+  // useEffect(() => {
+  //   playVid()
+  // }, []);
+
   return (
     <div>
       <Media
         query="(min-width: 527px)"
         render={() => (
-          <video autoPlay="true" muted="" loop="" id="siteVideo">
-            <source src={bgVideo} type="video/mp4" />
-            Your browser does not support HTML5 video.
-          </video>
+          <Video />
         )}
       />
       <div className="wrapper">
@@ -23,18 +32,22 @@ function App() {
         <main>
           <header className="app-header">
             <div className="logo">
-              <img alt='Alea logo' src={logo_desktop} />
+              <img alt="Alea logo" src={logo_desktop} />
             </div>
             <div className="logo_mobile">
-              <img alt='Alea logo'  src={logo_mobile} />
+              <img alt="Alea logo" src={logo_mobile} />
             </div>
           </header>
           <section>
             <div className="titles">
-            <h1 className="main-tilte">High-Performance Organic Skincare</h1>
-            <h2 className="sub-tilte">For the 9 month and Beyond!</h2>
+              <h1 className="main-tilte">High-Performance Organic Skincare</h1>
+              <h2 className="sub-tilte">For the 9 month and Beyond!</h2>
             </div>
-          <img alt='Alea background' className="bg-mobile" src={photo_mobile} />
+            <img
+              alt="Alea background"
+              className="bg-mobile"
+              src={photo_mobile}
+            />
             <aricle className="news-letter-join">
               Join our newsletter & get the chance to <br />
               <span>WIN</span> 1 of 5 product sets wen we launch!
